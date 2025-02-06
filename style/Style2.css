@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+*{ 
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+}   
+
+:root{ 
+    --cor-primaria: #212121; 
+    --cor-secundaria: #A35C7A;  
+    --cor--terciaria: #C890A7;
+    --cor-hover: #FBF5E5 ; 
+    --cor-borda: #A35C7A ;
+
+}
+
+
+.paginaSeguinte{  
+    padding: 1%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+    border: 2px solid var(--cor--terciaria);
+    
+} 
+
+.paginaSeguinte__links{  
+    display: flex;
+    justify-content: space-between; 
+    gap: 35px;
+} 
+
+.paginaSeguinte__links__link{ 
+    font-family: "Montserrat", serif; 
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none; 
+
+} 
+
+.paginaSeguinte__links__link:hover{ 
+    transform: scale(1.1); 
+    color: var(--cor-hover);
+}
+
+
+body{ 
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria)
+} 
+
+.sobreMim{  
+    display: flex;  
+    padding: 5% 10% 5% 10%; 
+    align-items: center; 
+    gap: 120px;
+ 
+}  
+
+.sobreMim__conteudo{   
+    padding: 0 0 0 5%;
+    align-items: center;
+    width: 500px; 
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    font-size: 0.87rem; 
+    font-family: "Montserrat", serif; 
+    font-weight: 600; 
+    color: var(--cor-hover);
+} 
+.sobreMim__conteudo__titulo{ 
+    margin-left: -65%;
+}
+.sobreMim__conteudo__titulo__destaque{ 
+    color: var(--cor-secundaria);
+    font-size: 1.56rem; 
+    font-family: "Krona One", serif;
+}  
+
+.sobreMim__img{ 
+    display: flex; 
+    gap: 60px; 
+    justify-content: center; 
+    align-items: center; 
+}  
+
+
+.sobreMim__img__subtitulo{   
+    font-family: "Montserrat", serif; 
+    color: var(--cor-secundaria); 
+}  
+
+.sobreMim__img__listas{  
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    gap: 20px;
+}
+
+.sobreMim__img__listas__lista{  
+    display: flex;  
+    flex-direction: column;
+    font-family: "Krona One", serif;   
+    font-size: 0.93rem;
+    font-weight: 100;
+    color: var(--cor-hover); 
+    gap: 20px; 
+    padding: 0 0 0 20%; 
+    white-space: nowrap; 
+    text-decoration: none;
+   
+}
+
+
+.rodape{  
+    display: flex;   
+    padding: 1%; 
+    
+    justify-content: center;
+    align-items: center;  
+    border: 2px solid var(--cor-borda); 
+    background-color: var(--cor-hover);
+}   
+
+.rodape__nome{  
+    align-items: center;
+    font-size: 0.93rem; 
+    font-family: "Krona One", serif;  
+    color: var(--cor-secundaria); 
+    font-weight: 400;
+    display: flex;  
+    white-space: nowrap;
+}
+
+
+
+@media(max-width: 942px){ 
+    .sobreMim{ 
+        flex-direction: column-reverse; 
+        justify-content: center; 
+        padding: 10%; 
+        gap: 30px;
+    }  
+    .sobreMim__conteudo__titulo{ 
+        display: flex;
+        margin: 0;
+    }
+
+    .sobreMim__conteudo{  
+        justify-content: center; 
+        align-items: center;
+        width: 100%;
+    }
+    .apresentacao__links__link{ 
+        font-size: 1rem;
+    }
+    
+    .apresentacao__links__link__img{ 
+        width: 10%; 
+
+    }  
+    .sobreMim__conteudo__titulo__destaque{ 
+        display: flex;
+        
+        
+    } 
+
+    .img__eu{ 
+        width: 50%;
+    } 
+
+    
+
+    .sobreMim__conteudo__titulo__destaque{  
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap; 
+        justify-content: center;
+    } 
+
+    body{ 
+        width: 100%; 
+        
+    } 
+
+    .rodape{ 
+        width: 100%; 
+        padding: 2%;
+    }
+
+    .paginaSeguinte{ 
+        width: 100%; 
+        padding: 2%;
+    }
+}  
+
+@media(max-width: 524px){ 
+    .sobreMim__img__subtitulo{ 
+        font-size: 0.9rem;
+    } 
+
+    .img__hab{ 
+        width: 15%; 
+    } 
+
+    li{ 
+        font-size: 0.6rem; 
+
+    } 
+
+    .sobreMim__img{ 
+        gap: 15%;
+    } 
+
+    .rodape__nome{  
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+    }
+}
+
+
+
